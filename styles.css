@@ -146,21 +146,71 @@ footer {
         padding: 1.2rem 1rem 1rem 1rem;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
     .nav-links {
-        gap: 0.7rem;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 0.7rem 0.5rem;
+        border-radius: 6px;
+    }
+    .hero-content {
+        padding: 0 0.2rem;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 2rem 0.2rem 1.2rem 0.2rem;
     }
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .hero h2 {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .card {
-        padding: 1rem 0.5rem 0.7rem 0.5rem;
+        padding: 0.7rem 0.2rem 0.5rem 0.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .profile-photo {
+        width: 90px;
+        height: 90px;
+    }
+    .download-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    ul {
+        margin-left: 0.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1rem;
+    }
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .download-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.7rem;
     }
 }
 
